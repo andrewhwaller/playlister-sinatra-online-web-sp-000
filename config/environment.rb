@@ -1,4 +1,4 @@
-ENV['SINATRA_ENV'] ||= "development"
+ENV['SINATRA_ENV'] ||= "database"
 
 require 'bundler/setup'
 Bundler.require(:default, ENV['SINATRA_ENV'])
