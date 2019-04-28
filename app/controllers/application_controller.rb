@@ -8,7 +8,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/songs' do
-    #list all songs w/ clickable link to /show/song[:id]
+    @songs = Song.all
+   erb :'/songs/index'
   end
 
   get '/genres' do
