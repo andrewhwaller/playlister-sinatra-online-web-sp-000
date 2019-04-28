@@ -7,11 +7,4 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  get '/songs/:slug' do
-    #show page with links to song artist and genres
-  end
-
-  get '/genres/:slug' do
-    #show page with links to song artist and songs
-  end
 end
