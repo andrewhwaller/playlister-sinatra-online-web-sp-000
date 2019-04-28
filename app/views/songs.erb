@@ -2,3 +2,4 @@
 <ul>
 <% Songs.all.each do |song| %>
 <li><a href="/songs/<%"#{song.id}"%>"> <%=song.name%>, <%=song.artist%>, <%=song.genre%></a></li>
+<%end%>
