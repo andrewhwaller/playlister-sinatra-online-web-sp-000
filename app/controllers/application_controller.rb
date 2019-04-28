@@ -17,7 +17,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/artists' do
-  #list all artists w/ clickable link to /show/artist[:id]
+    @artists = Artist.all
+    erb :'/artists/index'
   end
 
   get '/songs/:slug' do
