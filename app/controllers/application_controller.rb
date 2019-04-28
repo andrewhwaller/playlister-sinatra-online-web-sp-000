@@ -7,15 +7,6 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  get '/genres' do
-  #list all genres w/ clickable link to /show/genre[:id]
-  end
-
-  get '/artists' do
-    @artists = Artist.all
-    erb :'/artists/index'
-  end
-
   get '/songs/:slug' do
     #show page with links to song artist and genres
   end
