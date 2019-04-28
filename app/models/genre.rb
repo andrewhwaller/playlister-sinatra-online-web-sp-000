@@ -6,4 +6,9 @@ class Genre < ActiveRecord::Base
   def slug
     name.downcase.tr(' ', '-')
   end
+
+  def self.find_by_slug(slug)
+    Genre.all.find{|self| artist.slug == slug}
+  end
+
 end
